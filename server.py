@@ -40,4 +40,4 @@ async def sl (text):
     scripts.del_folder(id)
 
     #Send completion
-    return {'message': 'Complete', 'data': NotImplementedError}
+    return {'message': 'Complete', 'data': id}
