@@ -108,7 +108,7 @@ def generate_video(id):
     imgs = [path + img for img in os.listdir(path)]
     imgs.sort()
 
-    clip = ImageSequenceClip(imgs, fps=0.1)
+    clip = ImageSequenceClip(imgs, fps=0.3)
     clip.write_videofile(f'./exports/{id}.mp4', codec='libx264')
 
 
