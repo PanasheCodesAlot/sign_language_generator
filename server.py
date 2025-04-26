@@ -16,7 +16,7 @@ def parse_client_msg (data):
 app = FastAPI()
 app.mount('/videos', StaticFiles(directory='exports'), name='static')
 
-@app.get('create/{text}')
+@app.get('/create/{text}')
 async def sl (text):
     id = genRanStr(10)
 
